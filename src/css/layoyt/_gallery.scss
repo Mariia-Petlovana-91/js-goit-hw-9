@@ -1,0 +1,44 @@
+.gallery{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* Три колонки однакової ширини */
+	gap: 24px;
+	margin-top: 24px;
+    }
+    
+    .gallery-item .sl-overlay{
+	background-color: black;
+    }
+    
+    
+    .gallery-link img {
+	width: 100%;
+	height: auto;
+    }
+    
+    .sl-overlay {
+	background-color: #07080e !important;
+	  }
+    
+    .sl-prev,
+    .sl-next {
+	color: #fff !important;
+    }
+    
+    .sl-prev:hover, .sl-prev:focus {
+	color: #a39d9d !important;
+    }
+    
+    .sl-next:hover, .sl-next:focus{
+	color: #a39d9d !important;
+    }
+    .sl-close {
+	color: #fff !important;
+    }
+    
+    .sl-close:hover, .sl-close:focus {
+	color: #a39d9d !important;
+    }
+    
+    .sl-counter{
+	color: #fff !important;
+    }
