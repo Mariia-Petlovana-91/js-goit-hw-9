@@ -7,22 +7,22 @@
 	border: 1px solid rgba(0, 0, 0, 0.12);
 	border-radius: 8px;
 	margin-top: 24px;
-	  }
+}
 	  
-	  .feedback-form label {
+.feedback-form label {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 16px;
 	font-family: Montserrat;
-	    font-size: 16px;
-	    font-weight: 400;
-	    line-height: 24px;
-	    letter-spacing: 0.04em;
-	    text-align: left;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+	text-align: left;
     
-	  }
+}
 	  
-	  .feedback-form button {
+.feedback-form button {
 	padding: 8px 12px;
 	font: inherit;
 	cursor: pointer;
@@ -31,37 +31,39 @@
 	border-radius: 8px;
 	color: #ffffff;
 	font-family: Montserrat;
-	    font-size: 16px;
-	    font-weight: 400;
-	    line-height: 24px;
-	    letter-spacing: 0.04em;
-	    max-width: 95px;
-	  }
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+	max-width: 95px;
+}
     
-	  .feedback-form button:hover,
-	  .feedback-form button:focus{
+.feedback-form button:hover,
+.feedback-form button:focus{
+	outline: none;
 	background-color: #6C8CFF;
-	  }
+}
 	  
-	  input,
-	  textarea {
+input,
+textarea {
 	border: 1px solid rgba(0, 0, 0, 0.12);
 	border-radius: 8px;
 	padding: 8px;
 	font: inherit;
 	color: #2E2F42;
-	  }
+
+	&:hover,
+	&:focus{
+		outline: none;
+		border: 1px solid #00000070;
+	}
+}
     
-	  input:hover, input:focus{
-	outline: none;
-	border: 1px solid #00000070;
-	  }
-    
-	  textarea:hover, textarea:focus{
-	outline: none;
-	border: 1px solid #00000070;
-	  }
+// input:hover, input:focus{
+// 	outline: none;
+// 	border: 1px solid #00000070;
+// }
 	  
-	  textarea {
+textarea {
 	resize: none;
-	  }
+}

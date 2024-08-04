@@ -7,23 +7,24 @@
 	margin-bottom: 24px;
     }
     
-    .hero__item{
+.hero__item{
 	font-size: 32px;
 	color: blueviolet;
     }
     
-    .hero__item a:hover,
-    .hero__item a:focus{
+.hero__item a:hover,
+.hero__item a:focus{
 	color: rgb(173, 136, 207);
     }
     
-    section a{
+section a{
 	font-size: 24px;
 	font-weight: 500;
 	color: rgba(70, 67, 67, 0.774);
+	// margin-bottom: 24px;
     }
     
-    section a:hover{
+section a:hover{
     
 	color: rgb(218, 128, 188);
     }
