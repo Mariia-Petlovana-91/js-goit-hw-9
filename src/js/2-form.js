@@ -1,10 +1,9 @@
 const refs = {
 	form:document.querySelector('.form-js'),
-	submit:document.querySelector('.form-js'),
 }
 
 refs.form.addEventListener('input', collectFieldValues);
-refs.submit.addEventListener('submit', sendForm);
+refs.form.addEventListener('submit', sendForm);
 
 
 const STORAGE_KEY = "feedback-form-state";
@@ -29,10 +28,12 @@ getDataFromLocalStorage();
 
 function collectFieldValues (e){
 	formData[e.target.name] = e.target.value;
-	localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));	
+	localStorage.setItem(STORAGE_KEY, JSON.stringify(formData).trim());	
 }
 
+
 function sendForm(e){
+	console.log(formData);
 	e.preventDefault();
 	e.currentTarget.reset();
 	localStorage.removeItem(STORAGE_KEY);
